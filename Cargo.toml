@@ -9,3 +9,10 @@ tar = "0.4"
 flate2 = "1.0"
 xz2 = "0.1"
 clap = { version = "4.4", features = ["derive"] }
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
