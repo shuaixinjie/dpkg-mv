@@ -1,0 +1,11 @@
+[package]
+name = "dpkg-mv"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ar = "0.9"
+tar = "0.4"
+flate2 = "1.0"
+xz2 = "0.1"
+clap = { version = "4.4", features = ["derive"] }
